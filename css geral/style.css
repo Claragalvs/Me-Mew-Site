@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(header.css);
+@import url(home.css);
+@import url(aprender.css);
+@import url(mewnotas.css);
+@import url(calendario.css);
+@import url(about-us.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #170027;
+    --letras: white;
+    --letras-subtitulos: rgb(208, 159, 255);
+    --filtro-subtitulos: blueviolet;
+    --sombras: rgb(102, 10, 138);
+    --sombras-violetas: blueviolet;
+    --footer: rgba(138, 43, 226, .5);
+    --abt-us-filter:  rgb(127, 38, 211);
+    --box-shdw: rgb(192, 49, 248);
+    --title-home: rgb(208, 159, 255);
+    --cardbg: rgb(175, 41, 228);
+    --cardpet2: rgb(128, 0, 179);
+    --box-shd-pet: rgb(170, 25, 228);
+    --hovers: #8c53ff;
+    --cont: rgba(192, 49, 248, 0.10);
+    --iconborder: rgb(245, 157, 245);
+    --iconshad: rgb(96, 0, 134);
+    --cardapr: rgb(101, 27, 170);
+    --cardborder: #651baa;
+    --note:#482086;
+    --popup:rgb(105, 31, 173);
+    --divnote: rgba(200, 66, 253, 0.192);
+    --meiocinza-letras:gainsboro;
+    --cont-roxin: #C3ABF4;
+    --deletebtn: #8d39c5;
+    --edtbtn: #b69ee7;
+    --btncolor: rgb(114, 42, 155);
+    --cinza: #ccc;
+    --activeit: rgb(255, 255, 255);
+    --shadows: rgb(162, 104, 216);
+}
+.light-mode:root{
+    --bg-color: #8970bb;
+    --letras: rgb(255, 255, 255);
+    --letras-subtitulos: rgb(68, 0, 95);
+    --filtro-subtitulos: rgb(151, 131, 170);
+    --sombras: rgb(220, 130, 255);
+    --sombras-violetas: rgb(153, 92, 211);
+    --footer: #a48bd6;
+    --abt-us-filter:  rgb(58, 14, 99);
+    --box-shdw: rgb(80, 10, 107);
+    --title-home: rgb(53, 6, 97);
+    --cardbg: rgb(142, 18, 190);
+    --cardpet2: rgb(87, 6, 119);
+    --box-shd-pet: rgb(84, 11, 112);
+    --hovers: #2b0e64;
+    --cont: rgba(104, 9, 141, 0.1);
+    --iconborder: rgb(248, 193, 248);
+    --iconshad: rgb(64, 1, 88);
+    --cardapr: rgb(129, 54, 199);
+    --cardborder: rgb(129, 54, 199);
+    --note:#280857;
+    --popup:rgb(132, 54, 206);
+    --divnote: rgba(115, 40, 145, 0.192);
+    --meiocinza-letras:rgb(255, 255, 255);
+    --cont-roxin: #ecbebe;
+    --deletebtn: #7d2db3;
+    --edtbtn: #7c6f96;
+    --btncolor: rgb(156, 85, 197);
+    --cinza: #ccc;
+    --activeit: rgb(255, 255, 255);
+    --shadows: rgb(162, 104, 216);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--bg-color);
+    transition: background 0.2s linear;
+}
+main{
+    width: 100%;
+}
+.label i{
+    cursor: pointer;
+    color: white;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox-input{
+    opacity: 0;
+}
+.btn-default{
+    color: var(--letras);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sombras-violetas);
+    border-radius: 20px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px var(--sombras);
+    cursor: pointer;
+    transition: box-shadow .3s ease;
+}
+
+.btn-default:hover{
+    box-shadow: 0px 0px 10px 8px var(--sombras);
+}
+
+.social-media-buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-media-buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    color: var(--letras);
+    font-size: 1.25rem;
+    text-decoration: none;
+    background-color: var(--sombras-violetas);
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 2px var(--sombras);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover{
+    box-shadow: 0px 0px 10px 4px var(--sombras);
+}
+
+.section-title{
+    color: var(--letras);
+    font-size: 2.1875rem;
+}
+
+.section-subtitle{
+    color: var(--letras-subtitulos);
+    font-size: 1.563rem;
+    filter: drop-shadow(1px 1px 20px var(--letras-subtitulos));
+}
+

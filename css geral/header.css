@@ -1,0 +1,105 @@
+.header {
+    width: 100%;
+    padding: 20px 8%;
+    position: fixed;
+    top: 0;
+    background-color: var(--bg-color);
+    z-index: 100000;
+    box-shadow: 0px 0px 10px 7px var(--sombras);
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-logo {
+    font-size: 24px;
+    color: var(--letras);
+    filter: drop-shadow(1px 1px 20px var(--shadows));
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--activeit);
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: var(--activeit);
+    border-bottom: 2px solid var(--iconborder);
+    filter: drop-shadow(1px 1px 10px var(--shadows));
+}
+
+#mobile-btn {
+    color: var(--letras);
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+}
+.label{
+    background-color: var(--filtro-subtitulos);
+    box-shadow: 0px 0px 10px 4px var(--sombras);
+    border-radius: 30px;
+    position: relative;
+}
+.label .ball{
+    background-color: var(--box-shdw);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox-input:checked+ .label .ball{
+    transform: translateX(24px);
+}
+.label i{
+    padding: 5px;
+    justify-content: space-between;
+}
+@media screen and (max-width: 1170px) {
+    #nav-list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile-btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile-menu.active {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile-menu.active .nav-item {
+        list-style: none;
+        text-align: center;
+    }
+}

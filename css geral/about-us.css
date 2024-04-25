@@ -1,0 +1,89 @@
+#about-us {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus-title {
+    padding-top: 90px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.images-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.aboutus-img img {
+    width: 36vw; 
+    height: 100%;
+    filter: drop-shadow(1px 1px 6px var(--abt-us-filter));
+}
+
+.cards-animais {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-pet {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-text-abt {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px var(--box-shdw);
+    position: relative;
+    background-color: var(--cardbg);
+    margin-left: 20px;
+    transition: 0.6s;
+}
+
+.card-text-abt h2,
+.card-text-abt h3,
+.card-text-abt h2,
+.card-text-abt h5,
+p{
+    color: var(--letras);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.card-text-abt::before {
+    content: "";
+    position: absolute;
+    top: 75px;
+    left: -18px;
+    border-top: 20px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 20px solid var(--cardbg);
+    filter: drop-shadow(1px 1px 5px var(--cardbg));
+}
+.n2{
+    background-color: var(--cardpet2);
+    box-shadow: 0px 0px 10px 2px var(--box-shd-pet);
+
+}
+.n2::before{
+    border-right: 20px solid var(--cardpet2);
+    filter: drop-shadow(1px 1px 5px var(--cardpet2));
+}
+
+.card-image img {
+    max-width: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--iconborder);
+    box-shadow: 0 0 10px 2px var(--iconshad);
+    margin-right: 20px; 
+}

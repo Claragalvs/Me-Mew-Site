@@ -1,0 +1,128 @@
+#calendario {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-title {
+    padding-top: 90px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+#calendario-foto {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper {
+    width: 90%;
+    padding: 2px;
+    background: #2F0050;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(192, 49, 248, 0.651);
+    margin-bottom: 30px;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+.wrapper-img {
+    display: flex;
+    width: 100%;
+    /* padding: 10px; */
+    filter: drop-shadow(1px 1px 6px rgb(127, 38, 211));
+}
+
+.wrapper-img img {
+    width: 40vw; 
+    height: 100%; 
+}
+.wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+#calendario  header .icons{
+    display: flex;
+}
+#calendario header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+    line-height: 38px;
+    font-size: 1.9rem;
+    user-select: none;
+    border-radius: 50%;
+}
+.icons span:last-child{
+    margin-right: -10px;
+}
+#calendario header .icons span:hover{
+    background: #3d0564;
+}
+#calendario header .current-date{
+    color: white;
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+.calendar{
+    padding: 20px;
+}
+.calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+.calendar .days{
+    margin-bottom: 20px;
+}
+.calendar li{
+    color: #ffffff;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+.calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+}
+.calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+.days li.inactive{
+    color: #aaa;
+}
+.days li.active{
+    color: #fff;
+}
+.days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.days li.active::before{
+    background: #9B59B6;
+}
+.days li:not(.active):hover::before{
+    background: #3d0564;
+}

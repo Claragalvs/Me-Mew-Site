@@ -1,0 +1,127 @@
+#aprender {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.titulo-aprender {
+    display: flex;
+    flex-direction: column;
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    padding: 6vw;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+}
+
+.card-image img {
+    max-height: 120px;
+}
+
+.cards-apr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-apr {
+    position: relative;
+    height: 70%;
+    width: 105%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cardapr);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px var(--iconshad);
+    margin: 40px;
+}
+
+.card-apr::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 150px;
+    right: 263px; 
+    border: 2px solid;
+    background-color: var(--cardapr);
+    border-color: transparent var(--cardborder) var(--cardborder) transparent;
+    transform: rotate(134deg);
+}
+
+.gato-profile {
+    border-radius: 100%;
+    border: var(--iconborder) 2px solid;
+    transform: translateY(-50px);
+    box-shadow: 0px 0px 10px 2px var(--iconshad);
+}
+
+.card-text {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--letras);
+}
+
+h1.name {
+    align-items: center;
+    margin: 0;
+}
+
+h3.desc {
+    font-size: 15.4px;
+    font-weight: 400;
+}
+
+h5.desc {
+    align-items: center;
+}
+
+.cards-laterais {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card1,
+.card2 {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px var(--box-shdw);
+}
+
+.card2 {
+    transform: translateX(55px);
+}
+
+.card-text-1 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--letras);
+}
+
+.card-text-1 h2,
+.card-text-1 h3,
+.card-text h2,
+.card-text h5 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
